@@ -16,10 +16,17 @@ const SingleTodo= ({todo, todos, setTodos}:Props) => {
       <span className='todos__single--text'>
       {todo.todo}
       </span>
-  
-    <MdEdit />
-    <AiFillDelete />
-    <IoIosDoneAll />
+     <div>
+      <span className="icon">
+      <MdEdit />
+      </span>
+      <span className="icon">
+      <AiFillDelete />
+      </span>
+      <span className="icon">
+      <IoIosDoneAll />
+      </span>
+     </div>   
     </form>
   )
 }
